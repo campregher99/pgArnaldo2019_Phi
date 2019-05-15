@@ -4,22 +4,24 @@ import java.util.ArrayList;
 
 public class Funzione {
 	/**
-	 * 
+	 * il numero primo che nelle slide è nominato come p
 	 */
 	private double primo;
 	/**
-	 * 
+	 * il numero che nelle slide è nominato come a
 	 */
 	private double a;
 	/**
-	 * 
+	 * il numero che nelle slide è nominato come b
 	 */
 	private double b;
 
 	/**
+	 * funzione ricorsiva che calcola il <b>phi di Eulero</b> del numero n secondo
+	 * la sua legge matematica
 	 * 
-	 * @param n
-	 * @return
+	 * @param n (numero del quale si vuole trovare il phi)
+	 * @return ritorna il <b>phi di Eulero</b> del numero n
 	 */
 	public int funzione(double n) {
 		if (isPotenza(n)) {
@@ -32,9 +34,10 @@ public class Funzione {
 	}
 
 	/**
+	 * metodo che verifica se il numero a è primo
 	 * 
-	 * @param a
-	 * @return
+	 * @param a (numero da controllare)
+	 * @return boolean (true se a è primo, false se non lo è)
 	 */
 	private boolean isPrimo(double a) {
 		int divisori = 0;
@@ -50,9 +53,13 @@ public class Funzione {
 	}
 
 	/**
+	 * funzinoe per capire se esiste il numero p tale che (n=p^k), dove: _a = n; _p
+	 * = primo; Se è stato possibile calcolarlo il valore di p è salvato
+	 * nell'attributo "primo" della classe;
 	 * 
-	 * @param a
-	 * @return
+	 * @param a (il numero n)
+	 * @return boolean (true se esiste il numero p tale che (n=p^k), false se non
+	 *         esiste)
 	 */
 	private boolean isPotenza(double a) {
 		ArrayList<Integer> listaPrimi = new ArrayList<Integer>();
@@ -77,9 +84,13 @@ public class Funzione {
 	}
 
 	/**
+	 * funzione per calcolare se esistono a e b tali che n=a*b con MCD(a,b)=1, dove
+	 * n è il parametro a; Se è stato possibile calcolarli i valori di a e b vengono
+	 * salvati nei rispettivi attributi "a" e "b" della classe;
 	 * 
-	 * @param a
-	 * @return
+	 * @param a (il numero n)
+	 * @return boolean (true se i valori di a e b vengono trovati, false se non è
+	 *         stato possibile trovarli)
 	 */
 	private boolean isMCD(double a) {
 		for (int i = 1; i <= a; i++) {
