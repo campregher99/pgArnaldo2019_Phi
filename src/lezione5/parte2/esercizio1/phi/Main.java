@@ -1,4 +1,4 @@
-package it.unibs.fp.esRossiCampregherElKhedar;
+package lezione5.parte2.esercizio1.phi;
 
 public class Main {
 	public static Interfaccia lettScrit = new Interfaccia();

@@ -1,4 +1,4 @@
-package it.unibs.fp.esRossiCampregherElKhedar;
+package lezione5.parte2.esercizio1.phi;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
